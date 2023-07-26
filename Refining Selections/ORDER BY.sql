@@ -37,3 +37,9 @@ SELECT author_lname, released_year, pages from books ORDER BY author_lname, rele
 SELECT author_lname, released_year, pages from books ORDER BY author_lname ASC, released_year DESC;
 
 SELECT author_lname, released_year, pages from books ORDER BY author_lname DESC, released_year ASC;
+
+
+-- we can also do order by for alias name
+SELECT CONCAT(author_fname, ' ', author_lname) AS author FROM BOOKS ORDER BY author;
+
+
