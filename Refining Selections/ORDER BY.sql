@@ -16,3 +16,14 @@ DESC books;
 SELECT title,pages,released_year from books order by pages;
 SELECT title,pages,released_year from books order by released_year;
 
+-- we can also use shorthand for the order by based on the position of select column name
+SELECT title, pages, released_year from books order by released_year;
+/* here the column name are title, pages, released_year and we are doing order
+   by based on released_year.
+   We can also use the number as the reference
+   title - 1
+   pages - 2
+   released_year - 3
+   so insted using ORDER BY released_year we can use number of it 
+*/
+SELECT title, pages, released_year from books order by 3;
