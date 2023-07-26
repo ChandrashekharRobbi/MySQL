@@ -19,7 +19,27 @@ SELECT title, author_lname FROM BOOKS WHERE author_lname LIKE '% %';
 SELECT title, released_year, stock_quantity FROM BOOKS ORDER BY stock_quantity, released_year DESC LIMIT 4;
 
 -- first by author_lname and then title
-SELECT title, author_lname FROM BOOKS ORDER BY author_lname, title;
+SELECT 
+    title, author_lname
+FROM
+    BOOKS
+ORDER BY author_lname , title;
 
 -- custom text sort by author lname
-SELECT CONCAT("My Favourite AUTHOR IS ",author_fname," ",author_lname,"!") AS yell FROM BOOKS ORDER BY author_lname;
+SELECT CONCAT(
+				"MY FAVOURITE AUTHOR IS ",
+				UPPER(author_fname),
+				" ",
+				UPPER(author_lname),"!"
+            ) AS yell FROM BOOKS ORDER BY author_lname;
+            
+-- OR
+SELECT UPPER(
+			CONCAT(
+					"My Favourite Author is ",
+                    author_fname,
+                    " ",
+                    author_lname,
+                    "!")
+				   ) AS yell 
+	   FROM BOOKS ORDER BY author_lname;
