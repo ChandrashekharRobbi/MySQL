@@ -10,4 +10,4 @@ SELECT min(released_year) AS old_released
    function with normal column and we cannot do that in one line
    so we have to understand subqueries
 */
--- we will see this in the subqueries part
+-- we will see this in the subqueries part 🚀
