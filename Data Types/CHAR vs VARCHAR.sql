@@ -1,0 +1,1 @@
+-- CHAR vs VARCHAR
