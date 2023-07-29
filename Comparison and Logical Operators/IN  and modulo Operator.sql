@@ -9,3 +9,5 @@ WHERE author_lname NOT IN ('Lahiri', 'Gaiman');
 SELECT * FROM BOOKS 
 WHERE 
 released_year >= 2000 AND released_year % 2 != 0;
+
+
