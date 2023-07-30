@@ -28,3 +28,5 @@ INSERT INTO TWEETS (content,Username) VALUES
 );
 
 SELECT * FROM TWEETS;
+
+
