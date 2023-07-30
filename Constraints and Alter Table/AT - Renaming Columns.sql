@@ -1,1 +1,17 @@
--- AT - Renaming Columns
+-- AT - Renaming 
+## Renaming Table
+# RENAME TABLE {OLD_TABLE} TO {NEW_TABLE}
+
+RENAME TABLE companies TO suppliers;
+
+-- by using ALTER TABLE
+# ALTER TABLE {OLD_TABLE} RENAME TO {NEW_TABLE}
+ALTER TABLE suppliers RENAME TO companies;
+
+## Renaming Columns
+SELECT * FROM COMPANIES;
+# ALTER TABLE {TABLE_NAME}
+# RENAME COLUMN {OLD_COL_NAME} TO {NEW_COL_NAME}
+ALTER TABLE companies
+RENAME COLUMN EMPLOYEE_COUNT2 TO EMPLOYEE_COUNT;
+
