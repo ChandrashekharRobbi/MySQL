@@ -1,0 +1,2 @@
+-- AT - Dropping Columns
+# ALTER TABLE {TABLE_NAME} DROP COLUMN {COLUMN_NAME} 
