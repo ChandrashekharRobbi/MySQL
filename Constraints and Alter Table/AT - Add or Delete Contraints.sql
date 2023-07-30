@@ -1,3 +1,4 @@
+# IN THE DOCS [] --> OPTIONAL
 -- AT - Add or Delete Contraints
 SHOW TABLES;
 SELECT * FROM CONTACTS;
