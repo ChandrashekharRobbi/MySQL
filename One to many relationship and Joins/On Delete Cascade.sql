@@ -34,7 +34,3 @@ VALUES ('2016-02-10', 99.99, 1),
        
 
 DELETE FROM customers WHERE id = 1;
-
-SELECT * FROM customers;
-
-SELECT * FROM ORDERS;
