@@ -28,4 +28,3 @@ SELECT emp_no,
        NTH_VALUE(emp_no, 2) OVER(ORDER BY salary DESC),
        NTH_VALUE(emp_no, 2) OVER(PARTITION BY department ORDER BY salary DESC)
 FROM employees ORDER BY emp_no;
-
